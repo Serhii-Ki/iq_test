@@ -98,14 +98,13 @@ ul,li {
     background-color: #181818;
     z-index: 1;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transition: opacity 0.3s ease;
   }
 
   .nav.active {
     visibility: visible;
     opacity: 1;
-    transform: translateX(0);
+
   }
 
   .list {
@@ -121,4 +120,37 @@ ul,li {
   .close.active {
     display: block;
   }
+}
+
+/*First section*/
+.first-section {
+  height: 100vh;
+  background: center / cover no-repeat url("./assets/bg/main_bg.png");
+  color: white;
+  padding: 80px 0 30px 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 28px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 30px;
+  color: #FFC700;
+}
+
+.img-wrapper {
+  height: 350px;
+  width: 350px;
+  margin: 30px auto 0 auto;
+  position: relative;
+}
+
+.first-section_img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
